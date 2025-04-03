@@ -1,5 +1,5 @@
 {
-  "name": "SOliverApp",
+  "name": "s-oliver-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "serve-json": "json-server --watch src/services/mockDB/mockData.json --port 3001"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.2",
@@ -16,6 +17,7 @@
     "@react-navigation/native": "^7.1.0",
     "@react-navigation/native-stack": "^7.3.5",
     "@react-navigation/stack": "^7.2.4",
+    "json-server": "^1.0.0-beta.3",
     "react": "19.0.0",
     "react-native": "0.78.1",
     "react-native-gesture-handler": "^2.25.0",
