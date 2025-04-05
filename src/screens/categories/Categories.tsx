@@ -1,43 +1,22 @@
-import { useEffect, useState } from 'react';
-import { View, Text, Platform } from 'react-native';
+/* eslint-disable react-native/no-inline-styles */
+import React from 'react';
+import { View, Text, Image, FlatList, Platform } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import axios from 'axios';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RootStackParamList } from '../../types/rootStackParams';
+import { useQuery } from '@tanstack/react-query';
 
-type Article = {
-  id: number;
-  title: string;
-  // Add other fields as needed
-};
+const Categories = ({ }: NativeStackScreenProps<RootStackParamList, 'CategoriesScreen'>) => {
 
-const Categories = ({}: NativeStackScreenProps<RootStackParamList, 'CategoriesScreen'>) => {
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(false);
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ['products'],
+    queryFn: () => {
+      const baseURL = Platform.OS === 'android' ? 'http://10.0.2.2:3001' : 'http://localhost:3001';
+      return axios.get(`${baseURL}/products`);
+    },
 
-const fetchPosts = async () => {
-  try {
-    const baseURL = Platform.OS === 'android' ? 'http://10.0.2.2:3001' : 'http://localhost:3001';
-    const response = await axios.get(`${baseURL}/products`);
-    console.log('Fetched data:', response.data);
-
-    if (Array.isArray(response.data)) {
-      setArticles(response.data);
-    } else {
-      console.warn('Data is not an array:', response.data);
-    }
-  } catch (error) {
-    console.error('Fetch error:', error);
-    setIsError(true);
-  } finally {
-    setIsLoading(false);
-  }
-};
-
-  useEffect(() => {
-    fetchPosts();
-  }, []);
+  });
 
   if (isLoading) {
     return (
@@ -53,17 +32,53 @@ const fetchPosts = async () => {
     return (
       <SafeAreaView style={{ flex: 1 }}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text>An error occurred while fetching data.</Text>
+          <Text>{ error.message}</Text>
         </View>
       </SafeAreaView>
     );
   }
+  console.log('Fetched data:', data?.data);
+  const products = data?.data || [];
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>{JSON.stringify(articles, null, 2)}</Text>
-  </View>
+      <FlatList
+        data={products}
+        keyExtractor={(item) => `${item.id}`}
+        numColumns={2}
+        contentContainerStyle={{ padding: 16 }}
+        renderItem={({ item }) => {
+          const firstVariant = item.variants?.[0];
+          const imageUrl = firstVariant?.images?.[0];
+
+          return (
+            <View style={{
+              marginBottom: 24,
+              backgroundColor: '#fff',
+              borderRadius: 12,
+              overflow: 'hidden',
+              shadowColor: '#000',
+              shadowOpacity: 0.1,
+              shadowOffset: { width: 0, height: 2 },
+              shadowRadius: 4,
+              elevation: 2,
+              padding: 12,
+            }}>
+              {imageUrl && (
+                <Image
+                  source={{ uri: imageUrl }}
+                  style={{ width: '50%', height: 200, borderRadius: 8 }}
+                  resizeMode="cover"
+                />
+              )}
+              <Text style={{ marginTop: 12, fontWeight: 'bold', fontSize: 16 }}>{item.name}</Text>
+              <Text>Type: {item.type}</Text>
+              <Text>Price: €{item.retailPrice}</Text>
+              {item.discount && <Text>Discount: {item.discount}%</Text>}
+            </View>
+          );
+        }}
+      />
 </SafeAreaView>
   );
 };
