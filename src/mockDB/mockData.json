@@ -1,74 +1,145 @@
 {
   "products": [
     {
-      "id": 2165257,
-      "name": "Jeans Mauro - Regular Fit - Mid Rise - Tapered Leg",
-      "retailPrice": 69.99,
+      "id": 2156922,
+      "name": "T-Shirt mit Logo-Print",
+      "retailPrice": 15.99,
       "discount": 25,
-      "type": "Jeans",
+      "type": "T-Shirt",
       "variants": [
         {
           "key": 1,
-          "color": "Blue",
-          "hexColor": "#0000FF",
+          "color": "Black",
+          "hexColor": "#000000",
           "images": [
-            "https://media.soliver.com/i/soliver/2165257.57Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+            "https://media.soliver.com/i/soliver/2156922.99D2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.99D2_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.99D2_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.99D2_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
-          "sizes": ["32/32", "34/32", "36/32", "38/32"]
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
         },
         {
           "key": 2,
-          "color": "Light Blue",
-          "hexColor": "#ADD8E6",
+          "color": "White",
+          "hexColor": "#FFFFFF",
           "images": [
-            "https://media.soliver.com/i/soliver/2165257.53Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+            "https://media.soliver.com/i/soliver/2165257.53Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2165257.53Z4_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2165257.53Z4_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2165257.53Z4_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
-          "sizes": ["30/30", "32/30", "34/30", "36/30"]
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+        },
+        {
+          "key": 3,
+          "color": "Lavender",
+          "hexColor": "#E6E6FA",
+          "images": [
+            "https://media.soliver.com/i/soliver/2156922.47D1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.47D1_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.47D1_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2156922.47D1_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
         }
       ]
     },
     {
-      "id": 2160131,
-      "name": "Strukturierte Strickjacke mit Logo-Patch",
-      "retailPrice": 59.99,
-      "discount": 25,
-      "type": "Sweater",
+      "id": 2141979,
+      "name": "Poloshirt mit Piquéstruktur",
+      "retailPrice": 17.99,
+      "discount": 30,
+      "type": "T-Shirt",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Dark Blue",
+          "hexColor": "#0B111E",
+          "images": [
+            "https://media.soliver.com/i/soliver/2141979.5884_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.5884_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.5884_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.5884_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL"]
+        },
+        {
+          "key": 2,
+          "color": "White",
+          "hexColor": "#FFFFFF",
+          "images": [
+            "https://media.soliver.com/i/soliver/2141979.0100_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.0100_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.0100_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.0100_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL"]
+        },
+        {
+          "key": 3,
+          "color": "Black",
+          "hexColor": "#000000",
+          "images": [
+            "https://media.soliver.com/i/soliver/2141979.9999_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.9999_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.9999_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2141979.9999_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL"]
+        }
+      ]
+    },
+    {
+      "id": 2161297,
+      "name": "Kapuzenjacke aus robustem Canvas",
+      "retailPrice": 119.99,
+      "type": "Jacket",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Brown",
+          "hexColor": "#964B00",
+          "images": [
+            "https://media.soliver.com/i/soliver/2161297.8483_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.8483_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.8483_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.8483_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL"]
+        },
+        {
+          "key": 2,
+          "color": "Dark Blue",
+          "hexColor": "#0B111E",
+          "images": [
+            "https://media.soliver.com/i/soliver/2161297.5852_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.5852_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.5852_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2161297.5852_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+        }
+      ]
+    },
+    {
+      "id": 2136995,
+      "name": "s.O ULTIMATE: Anzughose mit Hahnentritt-Muster",
+      "retailPrice": 79.99,
+      "discount": 36.5,
+      "type": "Pants",
       "variants": [
         {
           "key": 1,
           "color": "Navy",
           "hexColor": "#000080",
           "images": [
-            "https://media.soliver.com/i/soliver/2160131.5978_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+            "https://media.soliver.com/i/soliver/2136995.59N2_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2136995.59N2_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2136995.59N2_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2136995.59N2_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
-          "sizes": ["S", "M", "L", "XL"]
-        },
-        {
-          "key": 2,
-          "color": "Petrol",
-          "hexColor": "#008080",
-          "images": [
-            "https://media.soliver.com/i/soliver/2160131.6767_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
-          ],
-          "sizes": ["M", "L", "XL"]
-        },
-        {
-          "key": 3,
-          "color": "Beige",
-          "hexColor": "#F5F5DC",
-          "images": [
-            "https://media.soliver.com/i/soliver/2160131.8155_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
-          ],
-          "sizes": ["S", "M"]
-        },
-        {
-          "key": 4,
-          "color": "Slate Gray",
-          "hexColor": "#708090",
-          "images": [
-            "https://media.soliver.com/i/soliver/2160131.9500_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
-          ],
-          "sizes": ["L", "XL", "XXL"]
+          "sizes": ["44", "46", "48", "50", "52", "54", "56", "90", "94", "98", "102"]
         }
       ]
     },
@@ -96,6 +167,72 @@
             "https://media.soliver.com/i/soliver/2159276.7940_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
           "sizes": ["M", "L", "XL"]
+        }
+      ]
+    },
+    {
+      "id": 2150881,
+      "name": "s.O PURE: Superelastisches Anzugsakko in Wolloptik",
+      "retailPrice": 159.99,
+      "discount": 34,
+      "type": "Coat",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Blue",
+          "hexColor": "#4E6592",
+          "images": [
+            "https://media.soliver.com/i/soliver/2150881.53W1_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.53W1_outfit??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.53W1_flat??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.53W1_back??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["25", "26", "27", "44", "46", "48", "50", "52", "54", "56", "90", "94", "98", "102"]
+        },
+        {
+          "key": 2,
+          "color": "Olive Green",
+          "hexColor": "#556B2F",
+          "images": [
+            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["25", "26", "27", "44", "46", "48", "50", "52", "54", "56", "90", "94", "98", "102"]
+        }
+      ]
+    },
+    {
+      "id": 2149276,
+      "name": "Overshirt aus Twill",
+      "retailPrice": 69.99,
+      "discount": 36.9,
+      "type": "Pants",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Navy",
+          "hexColor": "#000080",
+          "images": [
+            "https://media.soliver.com/i/soliver/2149276.5978_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2155931.5978_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2155931.5978_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2155931.5978_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+        },
+        {
+          "key": 2,
+          "color": "Brown",
+          "hexColor": "#964B00",
+          "images": [
+            "https://media.soliver.com/i/soliver/2149276.8410_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2149276.8410_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2149276.8410_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2149276.8410_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
         }
       ]
     },
@@ -363,6 +500,72 @@
             "https://media.soliver.com/i/soliver/2156027.47N1_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
           "sizes": ["S", "M", "L", "XL", "XXL"]
+        }
+      ]
+    },
+    {
+      "id": 2142318,
+      "name": "Bermuda Jeans Mauro / Regular Fit / Mid Rise / Straight Leg",
+      "retailPrice": 49.99,
+      "discount": 55,
+      "type": "Shorts",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Slate Gray",
+          "hexColor": "#708090",
+          "images": [
+            "https://media.soliver.com/i/soliver/2142318.92Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.92Z4_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.92Z4_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.92Z4_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["29", "30", "31", "32", "33", "34", "36", "38"]
+        },
+        {
+          "key": 2,
+          "color": "Graphite",
+          "hexColor": "#474A51",
+          "images": [
+            "https://media.soliver.com/i/soliver/2142318.94Z4_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.94Z4_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.94Z4_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2142318.94Z4_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["29", "30", "31", "32", "33", "34", "36", "38"]
+        }
+      ]
+    },
+    {
+      "id": 2157179,
+      "name": "Bermuda Jeans Mauro / Regular Fit / Mid Rise / Straight Leg",
+      "retailPrice": 25.99,
+      "discount": 38,
+      "type": "Beanie",
+      "variants": [
+        {
+          "key": 1,
+          "color": "Black",
+          "hexColor": "#000000",
+          "images": [
+            "https://media.soliver.com/i/soliver/2157179.99X0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.99X0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.99X0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.99X0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["One Size"]
+        },
+        {
+          "key": 2,
+          "color": "Brown",
+          "hexColor": "#D2B48C",
+          "images": [
+            "https://media.soliver.com/i/soliver/2157179.83X0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.83X0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.83X0_flat?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
+            "https://media.soliver.com/i/soliver/2157179.83X0_back?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+          ],
+          "sizes": ["One Size"]
         }
       ]
     }
