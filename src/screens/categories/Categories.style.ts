@@ -37,9 +37,4 @@ export const styles = StyleSheet.create({
   fullScreen: {
     flex: 1,
   },
-  centerContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 });

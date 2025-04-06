@@ -1,54 +1,38 @@
 
-import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { styles } from './Categories.style';
-import { emptyProductList } from '../../components/ProductList/emptyProductList';
-import {ProductItem} from '../../components/ProductItem/productItem';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { RootStackParamList } from '../../types/rootStackParams';
-import { useProductsHook } from '../../hooks/useFetchedProductsHook';
+import { ProductList } from '../../components/ProductList/productList';
+import { ProductSortingAndFiltering, Sorting } from '../../components/ProductSortingAndFiltering/productSortingAndFiltering';
+import { SortingBottomSheet } from '../../components/BottomSheet/Sorting/SortingBottomSheet';
 
 const Categories = ({ }: NativeStackScreenProps<RootStackParamList, 'CategoriesScreen'>) => {
-
-  const { data, isLoading, isError, isFetching } = useProductsHook();
-  console.log('isLoading:', isLoading, ' isFetching:', isFetching);
-  if (isLoading) {
-    return (
-      <SafeAreaView style={styles.fullScreen}>
-        <View style={styles.centerContainer}>
-          <Text>Loading...</Text>
-        </View>
-      </SafeAreaView>
-    );
-  }
-
-  if (isError) {
-    return (
-      <SafeAreaView style={styles.fullScreen}>
-        <View style={styles.centerContainer}>
-          <Text>Error occurred</Text>
-        </View>
-      </SafeAreaView>
-    );
-  }
-  console.log('Fetched data:', data);
-  const products = data || [];
+  const [sortModalVisible, setSortModalVisible] = useState(false);
+  const [selectedSorting, setSelectedSorting] = useState<Sorting>('NEW');
 
   return (
     <SafeAreaView style={styles.fullScreen}>
-      <FlatList
-      contentContainerStyle={styles.footer}
-      data={products}
-      renderItem={item => (
-        <ProductItem product={item.item} index={item.index} />
-      )}
-      keyExtractor={item => `${item.id}`}
-      numColumns={2}
-      ListEmptyComponent={emptyProductList}
-    />
-</SafeAreaView>
+      <View style={[styles.fullScreen]}>
+      <ProductSortingAndFiltering
+        showSorting={() => setSortModalVisible(true)}
+        selectedSorting={selectedSorting}
+      />
+      <ProductList selectedSort={selectedSorting} />
+
+      <SortingBottomSheet
+        isVisible={sortModalVisible}
+        onClose={() => setSortModalVisible(false)}
+        updateSorting={setSelectedSorting}
+        selectedSorting={selectedSorting}
+      />
+    </View>
+      </SafeAreaView>
+
   );
+
 };
 
 export default Categories;
