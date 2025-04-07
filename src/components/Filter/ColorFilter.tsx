@@ -1,12 +1,15 @@
 import {Text, View, ScrollView} from 'react-native';
 import {styles} from './FilterModal.styles';
 import {ColorFilterOption} from './ColorFilterOption';
-import {useFilters} from '../../providers/filterProviderContext';
+// import {useFilters} from '../../providers/filterProviderContext';
 import {Color} from '../../types/product';
 import {useProductColors} from '../../hooks/useProductColors';
+import { useFiltersStore } from '../../stores/filter/FilterStore';
 
 export const ColorFilter = () => {
-  const {filters, updateSelectedColors} = useFilters();
+    // const { filters, updateSelectedColors } = useFiltersStore();
+    const filters = useFiltersStore(state => state.filters);
+    const updateSelectedColors = useFiltersStore(state => state.updateSelectedColors);
   const currentColorFilters = useProductColors();
 
   const toggleColor = (color: Color) => {

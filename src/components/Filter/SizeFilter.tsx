@@ -1,13 +1,14 @@
 import {Text, View, ScrollView} from 'react-native';
 import {styles} from './FilterModal.styles';
 import {SizeFilterOption} from './SizeFilterOption';
-import {useFilters} from '../../providers/filterProviderContext';
 import {Size} from '../../types/product';
 import {useProductSizes} from '../../hooks/useProductSizes';
+import { useFiltersStore } from '../../stores/filter/FilterStore';
 
 export const SizeFilter = () => {
-  const {filters, updateSelectedSizes} = useFilters();
   const currentSizeFilters = useProductSizes();
+    const filters = useFiltersStore(state => state.filters);
+    const updateSelectedSizes = useFiltersStore(state => state.updateSelectedSizes);
 
   const toggleSize = (size: Size) => {
     updateSelectedSizes(

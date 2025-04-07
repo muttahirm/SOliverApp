@@ -2,15 +2,14 @@ import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import {useState} from 'react';
 import {Dimensions, Text, View} from 'react-native';
 import {styles} from './FilterModal.styles';
-import {
-  useFilters,
-} from '../../providers/filterProviderContext';
 import {getPriceValueWithCurrency} from '../../utils/getPriceValueWithCurrency';
 import {usePriceRange} from '../../hooks/useProductPriceRange';
+import { useFiltersStore } from '../../stores/filter/FilterStore';
 
 export const PriceFilter = () => {
   const priceRange = usePriceRange();
-  const {filters, updateSelectedPriceRange} = useFilters();
+    const filters = useFiltersStore(state => state.filters);
+    const updateSelectedPriceRange = useFiltersStore(state => state.updateSelectedPriceRange);
 
   const [range, setRange] = useState([
     priceRange.min,

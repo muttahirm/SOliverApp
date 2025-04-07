@@ -4,7 +4,6 @@ import {RootStackParamList} from '../../types/rootStackParams';
 import BottomTabNavigator from '../bottomTabNavigation/bottomTabNavigator';
 import Filter from '../../screens/filters/FilterScreen';
 import ButtonBack from '../../components/Button/BackButton';
-// import {useFilters} from '../../providers/filterProviderContext';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
@@ -13,6 +12,7 @@ const HeaderLeftBackButton = ({ navigation }: { navigation: any }) => {
   return (
     <ButtonBack
       onButtonPress={() => {
+
         navigation.goBack();
       }}
     />
