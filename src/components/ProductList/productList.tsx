@@ -1,58 +1,29 @@
 
-import { useMemo, useState} from 'react';
-import { UseProductsHook } from '../../hooks/useFetchedProductsHook';
-import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+import { useMemo, memo } from 'react';
+import { FlatList } from 'react-native';
 import {ProductItem} from '../ProductItem/productItem';
 import {styles} from './productList.styles';
 import {Sorting} from '../ProductSortingAndFiltering/productSortingAndFiltering';
 import { emptyProductList } from './emptyProductList';
-import { sortProducts } from '../../utils/sorting';
-import {Button} from '../Button/Button';
+import { sortAndFilterProducts } from '../../utils/sorting';
+import { Product } from '../../types/product';
+import { useFilters } from '../../providers/filterProviderContext';
+import { usePriceRange } from '../../hooks/useProductPriceRange';
 
 interface ProductListProps {
-  selectedSort: Sorting;
+    selectedSort: Sorting;
+    products: Product[] | undefined;
 }
 
-export const ProductList = (props: ProductListProps) => {
-    const {selectedSort} = props;
-
-    const { data, isLoading, isError, refetch } = UseProductsHook();
-    const [isRefreshing, setIsRefreshing] = useState(false);
-
-    const onRefresh = () => {
-        setIsRefreshing(true);
-        refetch().then(() => setIsRefreshing(false));
-    };
+export const ProductList = memo((props: ProductListProps) => {
+    const { selectedSort, products } = props;
+     const {filters} = useFilters();
+    const priceRange = usePriceRange();
+    console.log('priceRange', priceRange);
 
     const sortedProducts = useMemo(() => {
-        return sortProducts(data, selectedSort);
-    }, [data, selectedSort]);
-
-    if (isLoading) {
-        return (
-            <View>
-            <ActivityIndicator size="large" />
-            <Text>Products Loading...</Text>
-        </View>
-        );
-    }
-
-    if (isError) {
-        return (
-            <View style={styles.centerContainer}>
-            <Text>Error occurred</Text>
-        <Button
-          containerStyle={styles.errorButton}
-          title="Erneut versuchen"
-          onPress={onRefresh}
-          disabled={isRefreshing}
-        />
-        {isRefreshing && (
-          <ActivityIndicator style={styles.loadingIndicator} size="large" />
-        )}
-            </View>
-        );
-    }
+        return sortAndFilterProducts(products, selectedSort, filters, priceRange);
+    }, [products, selectedSort, filters, priceRange]);
 
     return (
         <FlatList
@@ -66,4 +37,4 @@ export const ProductList = (props: ProductListProps) => {
         ListEmptyComponent={emptyProductList}
         />
     );
- };
+ });

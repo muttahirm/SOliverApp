@@ -180,7 +180,7 @@
         {
           "key": 1,
           "color": "Blue",
-          "hexColor": "#4E6592",
+          "hexColor": "#0000FF",
           "images": [
             "https://media.soliver.com/i/soliver/2150881.53W1_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
             "https://media.soliver.com/i/soliver/2150881.53W1_outfit??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
@@ -414,7 +414,7 @@
         {
           "key": 2,
           "color": "Olive Green",
-          "hexColor": "#808000",
+          "hexColor": "#556B2F",
           "images": [
             "https://media.soliver.com/i/soliver/2159295.7971_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
           ],
@@ -558,7 +558,7 @@
         {
           "key": 2,
           "color": "Brown",
-          "hexColor": "#D2B48C",
+          "hexColor": "#964B00",
           "images": [
             "https://media.soliver.com/i/soliver/2157179.83X0_front?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
             "https://media.soliver.com/i/soliver/2157179.83X0_outfit?bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",

@@ -1,13 +1,16 @@
-import { IArticle } from '.';
+// import { IArticle } from '.';
 
 export type RootStackParamList = {
   BottomTabScreen: undefined;
-  FilterScreen: { articles: IArticle[]; reducer: string };
+  FilterScreen: undefined;
 
   HomeScreen: undefined;
 
   CategoriesScreen: undefined;
   SubCategoriesScreen: { category: string };
+  // FilterScreen: {
+  //   onApply: (filters: any) => void;
+  // };
 
   WishListScreen: undefined;
   ShoppingCartScreen: undefined;

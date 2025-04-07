@@ -9,17 +9,23 @@ export const sortingOptions = ['NEW', 'PRICE_ASC', 'PRICE_DESC'] as const;
 
 interface ProductSortingProps {
   showSorting: () => void;
+  showFilter: () => void;
   selectedSorting: Sorting;
 }
 
 export const ProductSortingAndFiltering = (props: ProductSortingProps) => {
-  const {showSorting, selectedSorting} = props;
+  const {showSorting, showFilter, selectedSorting} = props;
   return (
     <View style={styles.container}>
       <ProductSettingOption
         onPress={showSorting}
         title={translateSortingOption(selectedSorting)}
         icon="sort"
+      />
+      <ProductSettingOption
+        onPress={showFilter}
+        title="Filter"
+        icon="filter"
       />
     </View>
   );

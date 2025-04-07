@@ -15,4 +15,5 @@ export const getPriceValueWithCurrency = (
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   }).format(numericPrice);
+
 };

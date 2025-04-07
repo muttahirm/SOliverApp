@@ -2,8 +2,8 @@ import React from 'react';
 import {Pressable, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {styles} from './SortingBottomSheet.styles';
-import { translateSortingOption } from '../../../utils/translateSortingOptions';
-import { Sorting } from '../../ProductSortingAndFiltering/productSortingAndFiltering';
+import { translateSortingOption } from '../../utils/translateSortingOptions';
+import { Sorting } from '../ProductSortingAndFiltering/productSortingAndFiltering';
 
 interface SortingOptionProps {
   sortingOption: Sorting;

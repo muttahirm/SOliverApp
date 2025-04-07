@@ -4,7 +4,7 @@ import Modal from 'react-native-modal';
 import {styles} from './SortingBottomSheet.styles';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {SortingOption} from './SortingOption';
-import { Sorting, sortingOptions } from '../../ProductSortingAndFiltering/productSortingAndFiltering';
+import { Sorting, sortingOptions } from '../ProductSortingAndFiltering/productSortingAndFiltering';
 
 interface SortingBottomSheetProps {
   isVisible: boolean;
