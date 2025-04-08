@@ -1,9 +1,9 @@
-import React, {useContext, useCallback} from 'react';
+import React, {useCallback} from 'react';
 import {TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
-import {favoritesProviderContext} from '../../../../providers/favoritesProviderContext';
 import {styles} from './FavoriteIcon.styles';
 import {ProductVariant} from '../../../../types/product';
+import {useFavoritesStore} from '../../../../stores/favorite/FavoriteStore';
 
 interface FavoriteIconProps {
   productID: number;
@@ -14,31 +14,20 @@ export const FavoriteIcon = ({
   productID,
   selectedProductVariant,
 }: FavoriteIconProps) => {
-  const favoritesContext = useContext(favoritesProviderContext);
+  const toggleFavorite = useFavoritesStore(state => state.toggleFavorite);
+  const isFavorite = useFavoritesStore(state =>
+    state.isFavorite(productID, selectedProductVariant.key),
+  );
 
   const handleToggleFavorite = useCallback(() => {
-    if (favoritesContext) {
-      favoritesContext.toggleFavorite(productID, selectedProductVariant.key);
-    }
-  }, [favoritesContext, productID, selectedProductVariant.key]);
-
-  if (!favoritesContext) {
-    return null;
-  }
+    toggleFavorite(productID, selectedProductVariant.key);
+  }, [productID, selectedProductVariant.key, toggleFavorite]);
 
   return (
     <TouchableOpacity
       style={styles.favoriteContainer}
       onPress={handleToggleFavorite}>
-      <Icon
-        name={
-          favoritesContext.isFavorite(productID, selectedProductVariant.key)
-            ? 'heart'
-            : 'hearto'
-        }
-        size={15}
-        color="red"
-      />
+      <Icon name={isFavorite ? 'heart' : 'hearto'} size={15} color="red" />
     </TouchableOpacity>
   );
 };

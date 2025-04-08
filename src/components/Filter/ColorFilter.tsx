@@ -7,7 +7,6 @@ import {useProductColors} from '../../hooks/useProductColors';
 import { useFiltersStore } from '../../stores/filter/FilterStore';
 
 export const ColorFilter = () => {
-    // const { filters, updateSelectedColors } = useFiltersStore();
     const filters = useFiltersStore(state => state.filters);
     const updateSelectedColors = useFiltersStore(state => state.updateSelectedColors);
   const currentColorFilters = useProductColors();

@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {Image, View} from 'react-native';
 import {ProductVariant} from '../../../types/product';
 import {styles} from './ProductImage.styles';
-import {FavoriteIcon} from './FavoriteIcon/FavoriteIcon';
+import { FavoriteIcon } from './FavoriteIcon/FavoriteIcon';
+import { CartIcon } from './CartIcon/CartIcon';
 
 interface ProductImageProps {
   productID: number;
@@ -24,6 +25,11 @@ export const ProductImage = ({
         productID={productID}
         selectedProductVariant={selectedProductVariant}
       />
+      <CartIcon
+        productID={productID}
+        selectedProductVariant={selectedProductVariant}
+      />
+
       {isVisible ? (
         <Image
           source={{uri: selectedProductVariant.images[0]}}

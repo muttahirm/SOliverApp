@@ -1,5 +1,6 @@
-import {useMemo, memo } from 'react';
+import {useMemo, memo} from 'react';
 import {FlatList} from 'react-native';
+// import {FlashList} from '@shopify/flash-list';
 import {ProductItem} from '../ProductItem/productItem';
 import {styles} from './productList.styles';
 import {Sorting} from '../ProductSortingAndFiltering/productSortingAndFiltering';
@@ -19,18 +20,21 @@ export const ProductList = memo((props: ProductListProps) => {
   const filters = useFiltersStore(state => state.filters);
   const priceRange = usePriceRange();
 
-
-
   const sortedProducts = useMemo(() => {
     return sortAndFilterProducts(products, selectedSort, filters, priceRange);
-  }, [
-    priceRange,
-    products,
-    selectedSort,
-    filters,
-  ]);
+  }, [priceRange, products, selectedSort, filters]);
 
   return (
+    // <FlashList
+    //   contentContainerStyle={styles.footer}
+    //   data={sortedProducts}
+    //   renderItem={item => (
+    //     <ProductItem product={item.item} index={item.index} />
+    //   )}
+    //   keyExtractor={item => `${item.id}`}
+    //   numColumns={2}
+    //   ListEmptyComponent={emptyProductList}
+    // />
     <FlatList
       contentContainerStyle={styles.footer}
       data={sortedProducts}

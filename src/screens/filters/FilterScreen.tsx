@@ -16,7 +16,7 @@ const Filter = ({
   const resetFilters = useFiltersStore(state => state.resetFilters);
   return (
     <SafeAreaView style={styles.fullScreen}>
-      <View>
+      <View style={styles.container}>
         <ColorFilter />
         <SizeFilter />
         <PriceFilter />

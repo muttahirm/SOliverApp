@@ -4,6 +4,8 @@ export const styles = StyleSheet.create({
   fullScreen: {
     flex: 1,
     backgroundColor: 'white',
+  },
+  container: {
     marginHorizontal: 10,
   },
 });
