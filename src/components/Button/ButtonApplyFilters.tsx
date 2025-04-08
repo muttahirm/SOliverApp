@@ -5,21 +5,22 @@ import {styles} from './Button.styles.ts';
 
 type Props = {
   onPress: () => void;
+  buttonName: string;
   disabled?: boolean;
 };
 
-export const ButtonApplyFilters = ({onPress, disabled = false}: Props) => {
+export const ButtonApplyFilters = ({onPress, buttonName, disabled = false}: Props) => {
   return (
     <Pressable
       disabled={disabled}
       onPress={onPress}
       style={({pressed}) => [
         styles.buttonBase,
-        disabled ? styles.buttonDisabled : styles.buttonEnabled,
+        buttonName === 'Apply Filter' ? styles.buttonEnabled : styles.buttonReset,
         pressed && styles.buttonPressed,
       ]}
       testID="button">
-      <Text style={styles.buttonText}>Apply Filter</Text>
+      <Text style={styles.buttonText}>{buttonName}</Text>
     </Pressable>
   );
 };

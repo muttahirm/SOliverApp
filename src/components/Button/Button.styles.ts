@@ -17,7 +17,8 @@ export const styles = StyleSheet.create({
     paddingVertical: 0.5,
     alignItems: 'center',
     justifyContent: 'center',
-  },  buttonBase: {
+  },
+  buttonBase: {
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 12,
@@ -27,6 +28,9 @@ export const styles = StyleSheet.create({
   },
   buttonEnabled: {
     backgroundColor: '#000',
+  },
+  buttonReset: {
+    backgroundColor: '#f00',
   },
   buttonDisabled: {
     backgroundColor: '#ccc',
