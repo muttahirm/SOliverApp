@@ -182,10 +182,10 @@
           "color": "Blue",
           "hexColor": "#0000FF",
           "images": [
-            "https://media.soliver.com/i/soliver/2150881.53W1_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.53W1_outfit??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.53W1_flat??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.53W1_back??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+            "https://media.soliver.com/i/soliver/2150881.53W1_front",
+            "https://media.soliver.com/i/soliver/2150881.53W1_outfit",
+            "https://media.soliver.com/i/soliver/2150881.53W1_flat",
+            "https://media.soliver.com/i/soliver/2150881.53W1_back"
           ],
           "sizes": ["25", "26", "27", "44", "46", "48", "50", "52", "54", "56", "90", "94", "98", "102"]
         },
@@ -194,10 +194,10 @@
           "color": "Olive Green",
           "hexColor": "#556B2F",
           "images": [
-            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800",
-            "https://media.soliver.com/i/soliver/2150881.7974_front??bg=rgb(239,239,239)&qlt=default&fmt=auto&w=800"
+            "https://media.soliver.com/i/soliver/2150881.7974_front",
+            "https://media.soliver.com/i/soliver/2150881.7974_front",
+            "https://media.soliver.com/i/soliver/2150881.7974_front",
+            "https://media.soliver.com/i/soliver/2150881.7974_front"
           ],
           "sizes": ["25", "26", "27", "44", "46", "48", "50", "52", "54", "56", "90", "94", "98", "102"]
         }

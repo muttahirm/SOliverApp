@@ -11,6 +11,7 @@
     "serve-json": "json-server --watch src/mockDB/mockData.json --port 3001"
   },
   "dependencies": {
+    "@d11/react-native-fast-image": "^8.9.2",
     "@gorhom/bottom-sheet": "^5.1.2",
     "@ptomasroos/react-native-multi-slider": "^2.2.2",
     "@react-native-async-storage/async-storage": "^2.1.2",
@@ -45,6 +46,7 @@
     "@react-native/eslint-config": "0.78.1",
     "@react-native/metro-config": "0.78.1",
     "@react-native/typescript-config": "0.78.1",
+    "@testing-library/jest-native": "^5.4.3",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.0.0",
     "@types/react-native-vector-icons": "^6.4.18",

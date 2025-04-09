@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
-import { styles } from './CartIcon.styles';
-import { ProductVariant } from '../../../../types/product';
-import { useCartStore } from '../../../../stores/cart/CartStore';  // Updated to use the CartStore
+import { styles } from './CartButton.styles';// Updated to use the CartStore
+import { useCartStore } from '../../../stores/cart/CartStore';
+import { ProductVariant } from '../../../types/product';
 
 interface CartIconProps {
   productID: number;

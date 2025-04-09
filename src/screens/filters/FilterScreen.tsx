@@ -7,7 +7,7 @@ import {RootStackParamList} from '../../types/rootStackParams';
 import {ColorFilter} from '../../components/Filter/ColorFilter';
 import {SizeFilter} from '../../components/Filter/SizeFilter';
 import {PriceFilter} from '../../components/Filter/PriceFilter';
-import {ButtonApplyFilters} from '../../components/Button/ButtonApplyFilters';
+import {ButtonApplyFilters} from '../../components/Button/ButtonApplyFilters/ButtonApplyFilters';
 import { useFiltersStore } from '../../stores/filter/FilterStore';
 
 const Filter = ({

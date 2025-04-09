@@ -1,9 +1,9 @@
 import React, {useCallback} from 'react';
 import {TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
-import {styles} from './FavoriteIcon.styles';
-import {ProductVariant} from '../../../../types/product';
-import {useFavoritesStore} from '../../../../stores/favorite/FavoriteStore';
+import {styles} from './FavoriteButton.styles';
+import { useFavoritesStore } from '../../../stores/favorite/FavoriteStore';
+import { ProductVariant } from '../../../types/product';
 
 interface FavoriteIconProps {
   productID: number;

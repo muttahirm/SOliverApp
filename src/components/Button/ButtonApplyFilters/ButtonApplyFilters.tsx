@@ -1,7 +1,6 @@
-// components/Button/ButtonApplyFilters.tsx
 import React from 'react';
 import {Pressable, Text} from 'react-native';
-import {styles} from './Button.styles.ts';
+import {styles} from '../Button/Button.styles.ts';
 
 type Props = {
   onPress: () => void;

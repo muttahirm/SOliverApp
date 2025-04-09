@@ -3,7 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../../types/rootStackParams';
 import BottomTabNavigator from '../bottomTabNavigation/bottomTabNavigator';
 import Filter from '../../screens/filters/FilterScreen';
-import ButtonBack from '../../components/Button/BackButton';
+import ButtonBack from '../../components/Button/BackButton/BackButton';
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 

@@ -12,7 +12,7 @@ import {
 } from '../../components/ProductSortingAndFiltering/productSortingAndFiltering';
 import {SortingBottomSheet} from '../../components/Sorting/SortingBottomSheet';
 import {UseProductsHook} from '../../hooks/useFetchedProductsHook';
-import {Button} from '../../components/Button/Button';
+import {Button} from '../../components/Button/Button/Button';
 import {useProductStore} from '../../stores/product/ProductStore';
 
 const Categories = ({

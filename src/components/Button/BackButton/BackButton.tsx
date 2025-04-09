@@ -2,8 +2,8 @@ import * as React from 'react';
 import { TouchableOpacity } from 'react-native';
 // import { Theme } from 'src/hooks';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { styles } from './Button.styles';
-import { IButton } from '../../types';
+import { styles } from './BackButton.styles';
+import { IButton } from '../../../types';
 
 const ButtonBack = ({ onButtonPress, ...rest }: IButton) => {
 

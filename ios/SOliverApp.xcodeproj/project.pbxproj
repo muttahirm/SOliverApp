@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		153C05ECFF758C3D326B970C /* libPods-SOliverApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6368DF074B6A9DB8CFE4A8B5 /* libPods-SOliverApp.a */; };
 		1A6DE1D0995719E4DC403AF5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		4581B516E89DB8A4DB6DBEDA /* libPods-SOliverApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E169E13530F6D17946DD9A /* libPods-SOliverApp.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +19,11 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SOliverApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SOliverApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = SOliverApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		14DC42EFDB3F87E6074EC4DA /* Pods-SOliverApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOliverApp.release.xcconfig"; path = "Target Support Files/Pods-SOliverApp/Pods-SOliverApp.release.xcconfig"; sourceTree = "<group>"; };
-		40E169E13530F6D17946DD9A /* libPods-SOliverApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOliverApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6368DF074B6A9DB8CFE4A8B5 /* libPods-SOliverApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SOliverApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648204BAF479B46D2F760FBE /* Pods-SOliverApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOliverApp.debug.xcconfig"; path = "Target Support Files/Pods-SOliverApp/Pods-SOliverApp.debug.xcconfig"; sourceTree = "<group>"; };
+		70322B547312386C27134E47 /* Pods-SOliverApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOliverApp.release.xcconfig"; path = "Target Support Files/Pods-SOliverApp/Pods-SOliverApp.release.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SOliverApp/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SOliverApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B48E2832F59B0EF5255A5F83 /* Pods-SOliverApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOliverApp.debug.xcconfig"; path = "Target Support Files/Pods-SOliverApp/Pods-SOliverApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4581B516E89DB8A4DB6DBEDA /* libPods-SOliverApp.a in Frameworks */,
+				153C05ECFF758C3D326B970C /* libPods-SOliverApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				40E169E13530F6D17946DD9A /* libPods-SOliverApp.a */,
+				6368DF074B6A9DB8CFE4A8B5 /* libPods-SOliverApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B48E2832F59B0EF5255A5F83 /* Pods-SOliverApp.debug.xcconfig */,
-				14DC42EFDB3F87E6074EC4DA /* Pods-SOliverApp.release.xcconfig */,
+				648204BAF479B46D2F760FBE /* Pods-SOliverApp.debug.xcconfig */,
+				70322B547312386C27134E47 /* Pods-SOliverApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -105,13 +105,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SOliverApp" */;
 			buildPhases = (
-				BC34C9ACC09FCA2DA0CD37C7 /* [CP] Check Pods Manifest.lock */,
+				EE811CA041CBD2ED26D82AF6 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				67C714DCC8CD9F167D2B9401 /* [CP] Embed Pods Frameworks */,
-				324492B8A958E9B33522AD3A /* [CP] Copy Pods Resources */,
+				92B47EE47F8BD31B280237FC /* [CP] Embed Pods Frameworks */,
+				0CA4877B87096E982A09EB5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +183,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		324492B8A958E9B33522AD3A /* [CP] Copy Pods Resources */ = {
+		0CA4877B87096E982A09EB5C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,7 +200,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOliverApp/Pods-SOliverApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67C714DCC8CD9F167D2B9401 /* [CP] Embed Pods Frameworks */ = {
+		92B47EE47F8BD31B280237FC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,7 +217,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOliverApp/Pods-SOliverApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC34C9ACC09FCA2DA0CD37C7 /* [CP] Check Pods Manifest.lock */ = {
+		EE811CA041CBD2ED26D82AF6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +255,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B48E2832F59B0EF5255A5F83 /* Pods-SOliverApp.debug.xcconfig */;
+			baseConfigurationReference = 648204BAF479B46D2F760FBE /* Pods-SOliverApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -283,7 +283,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14DC42EFDB3F87E6074EC4DA /* Pods-SOliverApp.release.xcconfig */;
+			baseConfigurationReference = 70322B547312386C27134E47 /* Pods-SOliverApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
