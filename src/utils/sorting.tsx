@@ -1,6 +1,5 @@
 
 import { Sorting } from '../components/ProductSortingAndFiltering/productSortingAndFiltering';
-// import { Filters } from '../providers/filterProviderContext';
 import { Filters } from '../stores/filter/FilterStore';
 import {Product} from '../types/product';
 import {calculatePriceAfterDiscount} from './calculatePriceAfterDiscount';

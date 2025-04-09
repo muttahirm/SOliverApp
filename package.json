@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
+    "coverage": "jest --coverage",
     "serve-json": "json-server --watch src/mockDB/mockData.json --port 3001"
   },
   "dependencies": {
