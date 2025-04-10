@@ -1,5 +1,5 @@
 import React, {useState, useMemo, useCallback, memo} from 'react';
-import {View} from 'react-native';
+import {View, Dimensions} from 'react-native';
 import {ProductVariant} from '../../../types/product';
 import {styles} from './ProductImage.styles';
 import {FavoriteIcon} from '../../Button/FavoriteButton/FavoriteButton';
@@ -21,8 +21,10 @@ export const ProductImage = memo(({
 }: ProductImageProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const screenWidth = Dimensions.get('window').width;
+
   const defaultRatio = 0.7;
-  const aspectRatioWidth = 177;
+  const aspectRatioWidth = screenWidth * 0.5 - 10;
 
   const [ratio, setRatio] = useState(defaultRatio);
 
