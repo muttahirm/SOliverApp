@@ -20,11 +20,16 @@ export const ProductItem = ({product, index}: ProductItemProps) => {
 
     const calculateCurrentPrice = useMemo(() => calculatePriceAfterDiscount(product.retailPrice, product.discount), [product.retailPrice, product.discount]);
 
-
+  if (product.tag) {
+    console.log('product.tag', product.tag);
+  } else {
+    console.log('product.tag not available');
+  }
   return (
     <View style={[styles.container, calculateProductItemMargin(index)]}>
       <ProductImage
         productID={product.id}
+        tag={ product.tag }
         selectedProductVariant={selectedProductVariant}
       />
       <View style={styles.productDetails}>

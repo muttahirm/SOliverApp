@@ -3,6 +3,7 @@ export interface Product {
     name: string;
     retailPrice: number;
     discount: number;
+    tag: tagType;
     type: ArticleType;
     variants: ProductVariant[];
 }
@@ -111,3 +112,7 @@ export type Size =
     | 'XXL'
     | '3XL';
 
+export type tagType =
+    | 'Sustainable'
+    | 'New'
+    | 'Vegan'

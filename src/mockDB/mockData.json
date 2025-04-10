@@ -5,6 +5,7 @@
       "name": "T-Shirt mit Logo-Print",
       "retailPrice": 15.99,
       "discount": 25,
+      "tag": "Sustainable",
       "type": "T-Shirt",
       "variants": [
         {
@@ -94,6 +95,7 @@
       "id": 2161297,
       "name": "Kapuzenjacke aus robustem Canvas",
       "retailPrice": 119.99,
+      "tag": "New",
       "type": "Jacket",
       "variants": [
         {
@@ -127,6 +129,7 @@
       "name": "s.O ULTIMATE: Anzughose mit Hahnentritt-Muster",
       "retailPrice": 79.99,
       "discount": 36.5,
+      "tag": "Vegan",
       "type": "Pants",
       "variants": [
         {
@@ -148,6 +151,7 @@
       "name": "Gesteppter Parka mit abnehmbarer Kapuze",
       "retailPrice": 149.99,
       "discount": 34,
+      "tag": "Sustainable",
       "type": "Coat",
       "variants": [
         {
@@ -481,6 +485,7 @@
       "name": "Regular Fit: Kariertes Hemd aus Baumwollstretch mit Brusttasche",
       "retailPrice": 39.99,
       "discount": 35,
+      "tag":"New",
       "type": "Shirt",
       "variants": [
         {
