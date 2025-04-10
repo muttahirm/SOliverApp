@@ -4,30 +4,22 @@ import {Dimensions, Text, View} from 'react-native';
 import {styles} from './FilterModal.styles';
 import {getPriceValueWithCurrency} from '../../utils/getPriceValueWithCurrency';
 import {usePriceRange} from '../../hooks/useProductPriceRange';
-import { useFiltersStore } from '../../stores/filter/FilterStore';
+import {useFiltersStore} from '../../stores/filter/FilterStore';
 
 export const PriceFilter = () => {
   const priceRange = usePriceRange();
-    const filters = useFiltersStore(state => state.filters);
-    const updateSelectedPriceRange = useFiltersStore(state => state.updateSelectedPriceRange);
+  const filters = useFiltersStore(state => state.filters);
+  const updateSelectedPriceRange = useFiltersStore(
+    state => state.updateSelectedPriceRange,
+  );
 
-  const [range, setRange] = useState([
-    priceRange.min,
-    priceRange.max,
-  ]);
+  const [range, setRange] = useState([priceRange.min, priceRange.max]);
 
-    const togglePrice = (pr: [number, number]) => {
-        console.log('price Range', priceRange);
+  const togglePrice = (pr: [number, number]) => {
     updateSelectedPriceRange(pr);
   };
 
-    const sliderWidth = Dimensions.get('window').width - 70;
-    console.log('getPriceValueWithCurrency =', getPriceValueWithCurrency(
-          range[0],
-    ));
-     console.log('range[0] =',
-          range[0],
-        );
+  const sliderWidth = Dimensions.get('window').width - 70;
   return (
     <View style={styles.filterSectionContainer}>
       <Text style={styles.filterTitle}>Price</Text>

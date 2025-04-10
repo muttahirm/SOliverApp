@@ -1,6 +1,5 @@
 import {useMemo, memo} from 'react';
 import {FlatList} from 'react-native';
-// import {FlashList} from '@shopify/flash-list';
 import {ProductItem} from '../ProductItem/productItem';
 import {styles} from './productList.styles';
 import {Sorting} from '../ProductSortingAndFiltering/productSortingAndFiltering';

@@ -6,5 +6,7 @@ export const UseProductsHook = (): UseQueryResult<Product[], unknown> => {
   return useQuery<Product[], unknown>({
     queryKey: ['product'],
     queryFn: fetchProducts,
+    staleTime: 60000,
+
   });
 };
