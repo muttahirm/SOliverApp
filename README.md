@@ -61,3 +61,27 @@ Open a new Terminal and run the following command to start tests
 `npm run test`
 
 `npm run coverage`
+
+# Acceptance Creteria
+
+1. Picture of the Article ✅
+2. Name of the Aritcle ✅
+3. Available colors of the Article ✅
+4. Retail of the Article ✅
+5. Filter by Price ✅
+6. Filter by Color ✅
+7. Product Image lazy loading ✅
+8. React Native and Typescript used ✅
+9. Common code standards and architecture implemented ✅
+10. Click of a different color changes the image ✅
+11. Unit test coverage ✅
+12. Only slider library used ✅
+
+# Additional Functionalities
+
+1. React navigation
+2. Bottom tab navigation to show Extra screens
+3. Zustand for state management and data persistence
+4. Use of axios
+5. Use of react-query
+6. Use of mmkv for local async storage
