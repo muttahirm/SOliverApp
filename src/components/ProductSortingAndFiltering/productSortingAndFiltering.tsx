@@ -2,6 +2,7 @@ import {View} from 'react-native';
 import {styles} from './productSortingAndFiltering.styles';
 import {ProductSettingOption} from './ProductSettingOptions';
 import { translateSortingOption } from '../../utils/translateSortingOptions';
+import { memo } from 'react';
 
 export type Sorting = 'NEW' | 'PRICE_ASC' | 'PRICE_DESC';
 
@@ -13,7 +14,7 @@ interface ProductSortingProps {
   selectedSorting: Sorting;
 }
 
-export const ProductSortingAndFiltering = (props: ProductSortingProps) => {
+export const ProductSortingAndFiltering = memo((props: ProductSortingProps) => {
   const {showSorting, showFilter, selectedSorting} = props;
   return (
     <View style={styles.container}>
@@ -29,4 +30,4 @@ export const ProductSortingAndFiltering = (props: ProductSortingProps) => {
       />
     </View>
   );
-};
+});

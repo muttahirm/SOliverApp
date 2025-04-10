@@ -1,5 +1,5 @@
 import {Text, View, ScrollView} from 'react-native';
-import {styles} from './FilterModal.styles';
+import {styles} from './Filter.styles';
 import {SizeFilterOption} from './SizeFilterOption';
 import {Size} from '../../types/product';
 import {useProductSizes} from '../../hooks/useProductSizes';

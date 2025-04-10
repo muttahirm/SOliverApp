@@ -1,6 +1,7 @@
 import {Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {styles} from './productSortingAndFiltering.styles';
+import { memo } from 'react';
 
 interface ProductSettingOptionProps {
   onPress: () => void;
@@ -8,7 +9,7 @@ interface ProductSettingOptionProps {
   icon: string;
 }
 
-export const ProductSettingOption = (props: ProductSettingOptionProps) => {
+export const ProductSettingOption = memo((props: ProductSettingOptionProps) => {
   const {onPress, title, icon} = props;
 
   return (
@@ -17,4 +18,4 @@ export const ProductSettingOption = (props: ProductSettingOptionProps) => {
       <Text style={styles.filterText}>{title}</Text>
     </TouchableOpacity>
   );
-};
+});

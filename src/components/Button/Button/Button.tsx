@@ -1,5 +1,6 @@
 import {Pressable, StyleProp, Text, ViewStyle} from 'react-native';
 import {styles} from './Button.styles';
+import { memo } from 'react';
 
 interface ButtonProps {
   containerStyle?: StyleProp<ViewStyle>;
@@ -8,7 +9,7 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-export const Button = (props: ButtonProps) => {
+export const Button = memo((props: ButtonProps) => {
   const {title, onPress, disabled} = props;
 
   return (
@@ -24,4 +25,4 @@ export const Button = (props: ButtonProps) => {
       <Text style={styles.buttonText}>{title}</Text>
     </Pressable>
   );
-};
+});

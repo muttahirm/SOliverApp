@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react';
+import React, {useState, useMemo, memo} from 'react';
 import {View, Text} from 'react-native';
 import {Product} from '../../types/product';
 import {styles} from './productItem.styles';
@@ -13,7 +13,7 @@ interface ProductItemProps {
   index: number;
 }
 
-export const ProductItem = ({product, index}: ProductItemProps) => {
+export const ProductItem = memo(({product, index}: ProductItemProps) => {
   const [selectedProductVariant, setSelectedProductVariant] = useState(
     product.variants[0],
   );
@@ -60,4 +60,4 @@ export const ProductItem = ({product, index}: ProductItemProps) => {
       </View>
     </View>
   );
-};
+});

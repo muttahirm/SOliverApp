@@ -1,7 +1,7 @@
 import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import {useState} from 'react';
 import {Dimensions, Text, View} from 'react-native';
-import {styles} from './FilterModal.styles';
+import {styles} from './Filter.styles';
 import {getPriceValueWithCurrency} from '../../utils/getPriceValueWithCurrency';
 import {usePriceRange} from '../../hooks/useProductPriceRange';
 import {useFiltersStore} from '../../stores/filter/FilterStore';

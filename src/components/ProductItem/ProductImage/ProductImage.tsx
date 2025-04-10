@@ -1,8 +1,7 @@
-import React, {useState, useMemo, useCallback} from 'react';
+import React, {useState, useMemo, useCallback, memo} from 'react';
 import {View} from 'react-native';
 import {ProductVariant} from '../../../types/product';
 import {styles} from './ProductImage.styles';
-// import {tagStyles} from '../../Tag/Tag.style';
 import {FavoriteIcon} from '../../Button/FavoriteButton/FavoriteButton';
 import {CartIcon} from '../../Button/CartButton/CartButton';
 import {CachedImage} from '../../CachedImage/CachedImage';
@@ -15,7 +14,7 @@ interface ProductImageProps {
   selectedProductVariant: ProductVariant;
 }
 
-export const ProductImage = ({
+export const ProductImage = memo(({
   productID,
   tag,
   selectedProductVariant,
@@ -73,4 +72,4 @@ export const ProductImage = ({
       )}
     </View>
   );
-};
+});

@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {memo, useCallback} from 'react';
 import {TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {styles} from './FavoriteButton.styles';
@@ -10,7 +10,7 @@ interface FavoriteIconProps {
   selectedProductVariant: ProductVariant;
 }
 
-export const FavoriteIcon = ({
+export const FavoriteIcon = memo(({
   productID,
   selectedProductVariant,
 }: FavoriteIconProps) => {
@@ -30,4 +30,4 @@ export const FavoriteIcon = ({
       <Icon name={isFavorite ? 'heart' : 'hearto'} size={15} color="red" />
     </TouchableOpacity>
   );
-};
+});

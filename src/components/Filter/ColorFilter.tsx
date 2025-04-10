@@ -1,7 +1,6 @@
 import {Text, View, ScrollView} from 'react-native';
-import {styles} from './FilterModal.styles';
+import {styles} from './Filter.styles';
 import {ColorFilterOption} from './ColorFilterOption';
-// import {useFilters} from '../../providers/filterProviderContext';
 import {Color} from '../../types/product';
 import {useProductColors} from '../../hooks/useProductColors';
 import { useFiltersStore } from '../../stores/filter/FilterStore';

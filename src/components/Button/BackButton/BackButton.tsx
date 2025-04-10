@@ -1,11 +1,10 @@
-import * as React from 'react';
+import  React, { memo } from 'react';
 import { TouchableOpacity } from 'react-native';
-// import { Theme } from 'src/hooks';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { styles } from './BackButton.styles';
 import { IButton } from '../../../types';
 
-const ButtonBack = ({ onButtonPress, ...rest }: IButton) => {
+const ButtonBack = memo(({ onButtonPress, ...rest }: IButton) => {
 
   return (
     <TouchableOpacity
@@ -23,6 +22,6 @@ const ButtonBack = ({ onButtonPress, ...rest }: IButton) => {
       />
     </TouchableOpacity>
   );
-};
+});
 
 export default ButtonBack;

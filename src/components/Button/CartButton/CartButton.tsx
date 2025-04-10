@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { memo, useCallback } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { styles } from './CartButton.styles';// Updated to use the CartStore
@@ -10,7 +10,7 @@ interface CartIconProps {
   selectedProductVariant: ProductVariant;
 }
 
-export const CartIcon = ({
+export const CartIcon = memo(({
   productID,
   selectedProductVariant,
 }: CartIconProps) => {
@@ -36,4 +36,4 @@ export const CartIcon = ({
       />
     </TouchableOpacity>
   );
-};
+});

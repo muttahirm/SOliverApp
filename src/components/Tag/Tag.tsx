@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {Text, View} from 'react-native';
 import {styles} from './Tag.style';
 import { getColor } from '../../utils/getBackgroudColor';
@@ -10,7 +10,7 @@ interface TagProps {
 
 
 
-export const Tag = ({tagName}: TagProps) => {
+export const Tag = memo(({tagName}: TagProps) => {
   return tagName ? (
     <View style={[styles.container, { backgroundColor: getColor(tagName) }]}>
           <Text style={[styles.text, {color: getTextColor(tagName)}]}>{tagName}</Text>
@@ -18,4 +18,4 @@ export const Tag = ({tagName}: TagProps) => {
   ) : (
     <View />
   );
-};
+});

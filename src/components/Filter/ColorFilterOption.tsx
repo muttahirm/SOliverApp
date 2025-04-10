@@ -1,7 +1,7 @@
 import {Pressable, Text, View} from 'react-native';
-import {styles} from './FilterModal.styles';
+import {styles} from './Filter.styles';
 import {Color} from '../../types/product';
-import {useMemo} from 'react';
+import {memo, useMemo} from 'react';
 import { ColorFilter } from '../../types/colorFilter';
 
 interface ColorFilterOptionProps {
@@ -10,8 +10,8 @@ interface ColorFilterOptionProps {
   selectedColorFilters: Color[];
 }
 
-export const ColorFilterOption = (porps: ColorFilterOptionProps) => {
-  const {colorFilter, toggleColorFilter, selectedColorFilters} = porps;
+export const ColorFilterOption = memo((props: ColorFilterOptionProps) => {
+  const {colorFilter, toggleColorFilter, selectedColorFilters} = props;
 
   const isSelected = useMemo(
     () => selectedColorFilters.includes(colorFilter.color),
@@ -42,4 +42,4 @@ export const ColorFilterOption = (porps: ColorFilterOptionProps) => {
       </Text>
     </View>
   );
-};
+});

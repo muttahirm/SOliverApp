@@ -1,7 +1,7 @@
 import {Pressable, Text} from 'react-native';
 import {Size} from '../../types/product';
-import {useMemo} from 'react';
-import {styles} from './FilterModal.styles';
+import {memo, useMemo} from 'react';
+import {styles} from './Filter.styles';
 
 interface SizeFilterOptionProps {
   sizeFilter: Size;
@@ -9,7 +9,7 @@ interface SizeFilterOptionProps {
   selectedSizeFilters: Size[];
 }
 
-export const SizeFilterOption = (props: SizeFilterOptionProps) => {
+export const SizeFilterOption = memo((props: SizeFilterOptionProps) => {
   const {sizeFilter, toggleSizeFilter, selectedSizeFilters} = props;
   const isSelected = useMemo(
     () => selectedSizeFilters.includes(sizeFilter),
@@ -31,4 +31,4 @@ export const SizeFilterOption = (props: SizeFilterOptionProps) => {
       </Text>
     </Pressable>
   );
-};
+});

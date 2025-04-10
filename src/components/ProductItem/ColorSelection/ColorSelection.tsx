@@ -1,6 +1,7 @@
 import {Pressable, View} from 'react-native';
 import {styles} from './ColorSelection.styles';
 import {ProductVariant} from '../../../types/product';
+import { memo } from 'react';
 
 interface ColorSelectionProps {
   productVariant: ProductVariant;
@@ -8,7 +9,7 @@ interface ColorSelectionProps {
   isSelected: boolean;
 }
 
-export const ColorSelection = (props: ColorSelectionProps) => {
+export const ColorSelection = memo((props: ColorSelectionProps) => {
   const {productVariant, updateProductVariant, isSelected} = props;
 
   return (
@@ -21,4 +22,4 @@ export const ColorSelection = (props: ColorSelectionProps) => {
       />
     </Pressable>
   );
-};
+});

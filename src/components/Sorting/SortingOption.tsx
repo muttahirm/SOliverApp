@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {Pressable, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {styles} from './SortingBottomSheet.styles';
@@ -11,7 +11,7 @@ interface SortingOptionProps {
   selectedSorting: Sorting;
 }
 
-export const SortingOption = ({
+export const SortingOption = memo(({
   sortingOption,
   updateSorting,
   selectedSorting,
@@ -28,4 +28,4 @@ export const SortingOption = ({
       )}
     </Pressable>
   );
-};
+});
