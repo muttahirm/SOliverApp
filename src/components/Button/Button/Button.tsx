@@ -1,4 +1,4 @@
-import {StyleProp, Text, TouchableOpacity, ViewStyle} from 'react-native';
+import {Pressable, StyleProp, Text, ViewStyle} from 'react-native';
 import {styles} from './Button.styles';
 
 interface ButtonProps {
@@ -9,14 +9,19 @@ interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps) => {
-  const {title, onPress, containerStyle, disabled} = props;
+  const {title, onPress, disabled} = props;
 
   return (
-    <TouchableOpacity
-      style={[styles.buttonContainer, containerStyle]}
+    <Pressable
+      disabled={disabled}
       onPress={onPress}
-      disabled={disabled}>
-      <Text style={styles.buttonTitle}>{title}</Text>
-    </TouchableOpacity>
+      style={({pressed}) => [
+        styles.buttonBase,
+        title === 'Apply Filter' ? styles.buttonEnabled : styles.buttonReset,
+        pressed && styles.buttonPressed,
+      ]}
+      testID="button">
+      <Text style={styles.buttonText}>{title}</Text>
+    </Pressable>
   );
 };

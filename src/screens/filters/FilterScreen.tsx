@@ -7,8 +7,8 @@ import {RootStackParamList} from '../../types/rootStackParams';
 import {ColorFilter} from '../../components/Filter/ColorFilter';
 import {SizeFilter} from '../../components/Filter/SizeFilter';
 import {PriceFilter} from '../../components/Filter/PriceFilter';
-import {ButtonApplyFilters} from '../../components/Button/ButtonApplyFilters/ButtonApplyFilters';
 import { useFiltersStore } from '../../stores/filter/FilterStore';
+import { Button } from '../../components/Button/Button/Button';
 
 const Filter = ({
   navigation,
@@ -20,11 +20,11 @@ const Filter = ({
         <ColorFilter />
         <SizeFilter />
         <PriceFilter />
-        <ButtonApplyFilters onPress={() => navigation.goBack()} buttonName="Apply Filter" />
-        <ButtonApplyFilters onPress={() => {
+        <Button onPress={() => navigation.goBack()} title="Apply Filter" />
+        <Button onPress={() => {
           resetFilters();
           navigation.goBack();
-        }} buttonName="Reset Filter" />
+        }} title="Reset Filter" />
       </View>
     </SafeAreaView>
   );
