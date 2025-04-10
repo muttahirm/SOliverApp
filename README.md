@@ -59,4 +59,5 @@ Open a new Terminal and run the following command to start the JSON server.
 Open a new Terminal and run the following command to start tests
 
 `npm run test`
+
 `npm run coverage`
