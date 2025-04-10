@@ -70,6 +70,7 @@ export const filterProductsByFilters = (
       .filter(Boolean) as Product[];
   }
 
+
   if (filters.selectedSizes.length > 0) {
     filteredProducts = filteredProducts
       .map(product => {
@@ -84,16 +85,12 @@ export const filterProductsByFilters = (
       .filter(Boolean) as Product[];
   }
 
-
   if (
-    filters.selectedPriceRange[0] > priceRange.min ||
-    filters.selectedPriceRange[1] < priceRange.max
+    filters.selectedPriceRange[0] >= priceRange.min ||
+    filters.selectedPriceRange[1] <= priceRange.max
   ) {
     filteredProducts = filteredProducts.filter(product => {
-      const calculatedRetailPrice = calculatePriceAfterDiscount(
-        product.retailPrice,
-        product.discount,
-      );
+      const calculatedRetailPrice = product.retailPrice;
       return (
         calculatedRetailPrice >= filters.selectedPriceRange[0] &&
         calculatedRetailPrice <= filters.selectedPriceRange[1]
