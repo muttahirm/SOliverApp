@@ -82,6 +82,7 @@ Open a new Terminal and run the following command to start tests
 1. React navigation
 2. Bottom tab navigation to show Extra screens
 3. Zustand for state management and data persistence
-4. Use of axios
-5. Use of react-query
-6. Use of mmkv for local async storage
+4. Sorting based on new product, ascending and descending prices
+5. Use of axios
+6. Use of react-query
+7. Use of mmkv for local async storage
