@@ -3,7 +3,7 @@ export const getColor = (tag: string): string => {
         case 'Sustainable':
             return '#007F5F';
         case 'New':
-            return '#1E90FF';
+            return '#FFFFFF';
         case 'Vegan':
             return '#FFC107';
         default:

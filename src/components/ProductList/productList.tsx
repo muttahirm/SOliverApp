@@ -25,16 +25,6 @@ export const ProductList = memo((props: ProductListProps) => {
   }, [priceRange, products, selectedSort, filters]);
 
   return (
-    // <FlashList
-    //   contentContainerStyle={styles.footer}
-    //   data={sortedProducts}
-    //   renderItem={item => (
-    //     <ProductItem product={item.item} index={item.index} />
-    //   )}
-    //   keyExtractor={item => `${item.id}`}
-    //   numColumns={2}
-    //   ListEmptyComponent={emptyProductList}
-    // />
     <FlatList
       contentContainerStyle={styles.footer}
       data={sortedProducts}

@@ -4,7 +4,10 @@ import { Filters } from '../stores/filter/FilterStore';
 import {Product} from '../types/product';
 import {calculatePriceAfterDiscount} from './calculatePriceAfterDiscount';
 
-export const sortProducts = (products: Product[] | undefined, sortingType: Sorting,): Product[] => {
+export const sortProducts = (
+  products: Product[] | undefined,
+  sortingType: Sorting,
+): Product[] => {
   if (!products) {
     return [];
   }
@@ -25,8 +28,17 @@ export const sortProducts = (products: Product[] | undefined, sortingType: Sorti
     );
   }
 
+  if (sortingType === 'NEW') {
+    return [...products].sort((a, b) => {
+      const aIsNew = a.tag?.includes('New') ? 1 : 0;
+      const bIsNew = b.tag?.includes('New') ? 1 : 0;
+      return bIsNew - aIsNew; // Products with 'New' tag come first
+    });
+  }
+
   return products;
 };
+
 
 
 export const filterProductsByFilters = (
