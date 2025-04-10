@@ -47,8 +47,8 @@ const BottomTabNavigator = () => {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarItemStyle: { paddingTop: 0 },
-        tabBarIcon: ({ color }) => getTabBarIcon(route.name, color),
-        tabBarLabel: ({ color }) => getTabBarLabel(route.name, color),
+        tabBarIcon: ({ color, focused }) => getTabBarIcon(route.name, focused ? 'black' : color),
+        tabBarLabel: ({ color, focused }) => getTabBarLabel(route.name, focused ? 'black' : color),
       })}
     >
       <Tab.Screen name="HomeTab" component={HomeStackNavigator} />
